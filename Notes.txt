@@ -1,0 +1,9 @@
+Resources: https://github.com/pivotal/jasmine/wiki/Spies; http://jasmine.github.io/2.0/introduction.html; 
+
+Installation: can be installed from Git, or as a Ruby Gem (with or without Rails), or as a Python Egg.
+
+The 'describe' keyword is used to group related specs. Can be nested. Describes 
+Specs are specified by the 'it' keyword. Specs are essentially tests.
+There can be more than one expectation in an 'it'.
+To exclude a test or set of tests, change 'describe' to 'xdescribe', or 'it' to 'xit'. Will set those specs to 'pending'.
+Spies allow for spying, mocking and faking. A spy replaces the function it is spying on. Useful for testing async behavior that require callbacks by faking the async method call.
