@@ -2,7 +2,11 @@ Resources: https://github.com/pivotal/jasmine/wiki/Spies; http://jasmine.github.
 
 Installation: can be installed from Git, or as a Ruby Gem (with or without Rails), or as a Python Egg.
 
-Scenarios:
+Scenario: A vending machine that should collect money and dispense items. The dev has been taskedwith showing the business that:
+ - The machine resets after use.
+ - Only correct coins are collected; any others are returned, and an error message is shown.
+ - Correct totals are always shown on the display.
+ - Items will not be dispensed unless the correct amount of money is in the machine; total of the item shown when not enough is inserted.
 
 The 'describe' keyword is used to group related specs. Can be nested. Describes 
 Specs are specified by the 'it' keyword. Specs are essentially tests.
