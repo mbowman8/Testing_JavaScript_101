@@ -9,18 +9,63 @@
 
   <script type="text/javascript" src="lib/jasmine-2.0.0/jasmine.js"></script>
   <script type="text/javascript" src="lib/jasmine-2.0.0/jasmine-html.js"></script>
+  <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
   <script type="text/javascript" src="lib/jasmine-2.0.0/boot.js"></script>
 
   <!-- include source files here... -->
-  <script type="text/javascript" src="src/Player.js"></script>
-  <script type="text/javascript" src="src/Song.js"></script>
+  <script type="text/javascript" src="src/VendingMachine.js"></script>
 
   <!-- include spec files here... -->
-  <script type="text/javascript" src="spec/SpecHelper.js"></script>
-  <script type="text/javascript" src="spec/PlayerSpec.js"></script>
-
+  <script type="text/javascript" src="spec/VendingMachineSpec.js"></script>
+  
 </head>
 
 <body>
+
+<script type="text/javascript"> 
+   jasmine.getEnv().addReporter(new jasmine.TrivialReporter()); 
+   jasmine.getEnv().execute(); 
+</script> 
+ 
+ 
+<div id="vending-machine" style="background-color: blue; width: 500px; text-align: center;"> 
+  <br> 
+  <h1 style="color: white; text-align: center;">VENDOMATIC</h1> 
+  <div> 
+    <button class="js-insert-penny-btn">Insert penny</button> 
+    <button class="js-insert-nickel-btn">Insert nickel</button> 
+    <button class="js-insert-dime-btn">Insert dime</button> 
+    <button class="js-insert-quarter-btn">Insert quarter</button> 
+  </div> 
+  <br> 
+  <div class="js-output" 
+    style="background-color: black; color: white; width: 120px; margin: auto;"> 
+    NO DISPLAY 
+  </div> 
+  <br> 
+  <div style="align: right;"> 
+    <button class="js-take-penny-btn">Take penny</button> 
+    <div class="js-coinReturn" 
+      style="background-color: black; color: white; width: 120px; margin: auto;"> 
+      NO DISPLAY 
+    </div> 
+  </div> 
+  <br> 
+  <br> 
+  <div> 
+    <button class="js-buy-cola-btn">Cola $1.00</button> 
+  </div> 
+  <br> 
+  <div style="align: left;"> 
+    <button class="js-take-item-btn">Take item</button> 
+    <div class="js-itemContainer" 
+      style="background-color: black; color: white; width: 120px; margin: auto;"> 
+      NO DISPLAY 
+    </div> 
+  </div> 
+  <br> 
+</div> 
+
+
 </body>
 </html>

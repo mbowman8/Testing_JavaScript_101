@@ -1,6 +1,8 @@
-Resources: https://github.com/pivotal/jasmine/wiki/Spies; http://jasmine.github.io/2.0/introduction.html; 
+Resources: https://github.com/pivotal/jasmine/wiki/Spies; http://jasmine.github.io/2.0/introduction.html; wikipedia.org for TDD and BDD
 
 Installation: can be installed from Git, or as a Ruby Gem (with or without Rails), or as a Python Egg.
+
+Scenarios:
 
 The 'describe' keyword is used to group related specs. Can be nested. Describes 
 Specs are specified by the 'it' keyword. Specs are essentially tests.
